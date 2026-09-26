@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Company Overview</p>
+          <h1>Employee Dashboard</h1>
+        </div>
+        <button id="addEmployeeBtn" class="primary-btn">Add Employee</button>
+      </header>
+
+      <section class="stats" id="statsSection">
+        <div class="stat-card">
+          <span class="label">Total Employees</span>
+          <strong id="totalEmployees">0</strong>
+        </div>
+        <div class="stat-card">
+          <span class="label">Average Salary</span>
+          <strong id="averageSalary">₹0</strong>
+        </div>
+        <div class="stat-card">
+          <span class="label">Departments</span>
+          <strong id="departmentCount">0</strong>
+        </div>
+      </section>
+
+      <section class="controls">
+        <input id="searchInput" type="search" placeholder="Search by name or email" aria-label="Search employees" />
+
+        <select id="departmentFilter" aria-label="Filter by department">
+          <option value="All">All Departments</option>
+          <option value="IT">IT</option>
+          <option value="HR">HR</option>
+          <option value="Finance">Finance</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Operations">Operations</option>
+        </select>
+
+        <select id="sortControl" aria-label="Sort employees">
+          <option value="name-asc">Name: A-Z</option>
+          <option value="name-desc">Name: Z-A</option>
+          <option value="salary-asc">Salary: Low to High</option>
+          <option value="salary-desc">Salary: High to Low</option>
+        </select>
+      </section>
+
+      <div id="messageBox" class="message-box" aria-live="polite"></div>
+
+      <section id="employeeFormSection" class="form-section hidden">
+        <h2 id="formTitle">Add Employee</h2>
+        <form id="employeeForm">
+          <div class="form-grid">
+            <label>
+              Name
+              <input type="text" id="name" name="name" required />
+            </label>
+            <label>
+              Email
+              <input type="email" id="email" name="email" required />
+            </label>
+            <label>
+              Department
+              <select id="department" name="department" required>
+                <option value="">Select department</option>
+                <option value="IT">IT</option>
+                <option value="HR">HR</option>
+                <option value="Finance">Finance</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Operations">Operations</option>
+              </select>
+            </label>
+            <label>
+              Position
+              <input type="text" id="position" name="position" required />
+            </label>
+            <label>
+              Salary
+              <input type="number" id="salary" name="salary" min="0" required />
+            </label>
+            <label>
+              Location
+              <input type="text" id="location" name="location" required />
+            </label>
+          </div>
+          <div class="form-actions">
+            <button type="submit" class="primary-btn">Save</button>
+            <button type="button" id="cancelFormBtn" class="secondary-btn">Cancel</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Department</th>
+              <th>Position</th>
+              <th>Salary</th>
+              <th>Location</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="employeeTableBody"></tbody>
+        </table>
+      </section>
+
+      <aside id="employeeDetails" class="details-panel hidden">
+        <div class="details-header">
+          <h2>Employee Details</h2>
+          <button id="closeDetailsBtn" class="ghost-btn" type="button">Close</button>
+        </div>
+        <div id="detailsContent"></div>
+      </aside>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

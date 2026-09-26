@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "email": "rahul.sharma@company.com",
+    "department": "IT",
+    "position": "Frontend Developer",
+    "salary": 65000,
+    "location": "Bengaluru"
+  },
+  {
+    "id": 2,
+    "name": "Priya Nair",
+    "email": "priya.nair@company.com",
+    "department": "HR",
+    "position": "HR Manager",
+    "salary": 58000,
+    "location": "Hyderabad"
+  },
+  {
+    "id": 3,
+    "name": "Vikram Singh",
+    "email": "vikram.singh@company.com",
+    "department": "Finance",
+    "position": "Accountant",
+    "salary": 71000,
+    "location": "Delhi"
+  },
+  {
+    "id": 4,
+    "name": "Ananya Verma",
+    "email": "ananya.verma@company.com",
+    "department": "Marketing",
+    "position": "Marketing Lead",
+    "salary": 76000,
+    "location": "Mumbai"
+  },
+  {
+    "id": 5,
+    "name": "Karan Mehta",
+    "email": "karan.mehta@company.com",
+    "department": "IT",
+    "position": "Backend Developer",
+    "salary": 82000,
+    "location": "Pune"
+  },
+  {
+    "id": 6,
+    "name": "Meera Joshi",
+    "email": "meera.joshi@company.com",
+    "department": "Operations",
+    "position": "Operations Analyst",
+    "salary": 54000,
+    "location": "Chennai"
+  },
+  {
+    "id": 7,
+    "name": "Rohit Patel",
+    "email": "rohit.patel@company.com",
+    "department": "Finance",
+    "position": "Financial Analyst",
+    "salary": 67000,
+    "location": "Ahmedabad"
+  },
+  {
+    "id": 8,
+    "name": "Sonia Gupta",
+    "email": "sonia.gupta@company.com",
+    "department": "HR",
+    "position": "Recruitment Specialist",
+    "salary": 48000,
+    "location": "Jaipur"
+  },
+  {
+    "id": 9,
+    "name": "Arjun Iyer",
+    "email": "arjun.iyer@company.com",
+    "department": "Marketing",
+    "position": "Content Strategist",
+    "salary": 62000,
+    "location": "Bengaluru"
+  },
+  {
+    "id": 10,
+    "name": "Nisha Rao",
+    "email": "nisha.rao@company.com",
+    "department": "IT",
+    "position": "QA Engineer",
+    "salary": 69000,
+    "location": "Kochi"
+  }
+]
