@@ -1,0 +1,6 @@
+laravel-api/vendor/
+laravel-api/.env
+laravel-api/.env.*
+!laravel-api/.env.example
+laravel-api/storage/logs/
+*.log

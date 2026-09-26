@@ -1,0 +1,24 @@
+CREATE DATABASE IF NOT EXISTS employee_management;
+USE employee_management;
+
+CREATE TABLE IF NOT EXISTS departments (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS employees (
+    id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(150) NOT NULL,
+    email VARCHAR(180) NOT NULL UNIQUE,
+    department_id BIGINT UNSIGNED NOT NULL,
+    position VARCHAR(150) NOT NULL,
+    salary DECIMAL(10, 2) NOT NULL,
+    location VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    CONSTRAINT employees_salary_positive CHECK (salary > 0),
+    CONSTRAINT employees_department_fk FOREIGN KEY (department_id)
+        REFERENCES departments(id)
+        ON UPDATE CASCADE
+        ON DELETE RESTRICT
+);
