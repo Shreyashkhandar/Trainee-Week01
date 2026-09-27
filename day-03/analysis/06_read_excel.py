@@ -1,19 +1,26 @@
 import pandas as pd
 
-# Excel file location
 file_path = "day-03/dataset/facility_hygiene_ml_dataset.xlsx"
 
-# Read the Excel file
 data = pd.read_excel(file_path)
 
-# Display the first 5 rows
-print("First 5 rows:")
-print(data.head())
+print("Dataset Information")
+print("-------------------")
 
-# Display column names
+print("\nShape:")
+print(data.shape)
+
 print("\nColumns:")
 print(data.columns.tolist())
 
-# Display dataset shape
-print("\nDataset Shape:")
-print(data.shape)
+print("\nData Types:")
+print(data.dtypes)
+
+print("\nFirst 5 Rows:")
+print(data.head())
+
+print("\nLast 5 Rows:")
+print(data.tail())
+
+print("\nBasic Statistics:")
+print(data.describe())

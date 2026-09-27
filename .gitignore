@@ -16,3 +16,8 @@ venv/
 # IDE files
 .vscode/
 .idea/
+
+# Node and TypeScript build output
+node_modules/
+dist/
+*.tsbuildinfo
