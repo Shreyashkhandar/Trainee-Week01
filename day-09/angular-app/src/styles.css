@@ -1,0 +1,7 @@
+* { box-sizing: border-box; }
+html { min-width: 320px; background: #f4f3ed; }
+body { margin: 0; color: #263a33; font-family: 'Trebuchet MS', Arial, sans-serif; }
+button, input, select, textarea { font: inherit; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #d9a441; outline-offset: 2px; }
